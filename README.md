@@ -1,87 +1,72 @@
-Got it! You want the text formatted as raw code so it doesn’t render as Markdown when pasted. Here's the content wrapped for raw text usage:
-
-````markdown
 # RBAC Backend
 
 This project is a Role-Based Access Control (RBAC) backend system designed to manage user roles, permissions, and secure access to API endpoints.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Setting up JWT_SECRET](#setting-up-jwt_secret)
-- [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
+
 The RBAC backend system enables the implementation of role-based access control for users. It allows system administrators to define roles, manage permissions, and securely authenticate users. The system provides flexible API endpoints for user authentication and authorization, as well as role and permission management.
 
 ## Features
+
 - **User Authentication and Authorization**: Secure login and token-based authentication.
 - **Role Management**: Create, update, and assign roles to users.
 - **Permission Management**: Define and manage permissions for different roles.
 - **Secure API Endpoints**: Protect API routes with role-based access controls.
 
 ## Installation
+
 To set up the project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/rbac-backend.git
-   ```
-2. **Navigate to the project directory**:
-   ```bash
+
+## Navigate to the project directory:
+```bash 
    cd rbac-backend
-   ```
-3. **Install the dependencies**:
-   ```bash
+```
+
+
+## Install the dependencies:
+```bash 
    npm install
-   ```
+```
 
 ## Setting up JWT_SECRET
-To configure the `JWT_SECRET` for both the User and Admin backends, follow these steps:
 
-1. **Check the .env files**:
-   Open both the user-backend and admin-backend services.
 
-   Ensure that the `JWT_SECRET` variables in the `.env` files for both services are empty.
+### To configure the JWT_SECRET for both the User and Admin backends, follow these steps:
 
-   Example:
-   ```env
-   JWT_SECRET=
-   ```
+### Check the .env files: Open both the user-backend and admin-backend services.
 
-2. **Run the Setup Script**:
-   Run the following command to generate the `JWT_SECRET` for both services:
-   ```bash
+### Ensure that the JWT_SECRET variables in the .env files for both services are empty.
+
+## Example:
+ -  env
+ -  Copy
+ -  Edit
+ -  JWT_SECRET=
+  
+
+## Run the Setup Script: Run the following command to generate the JWT_SECRET for both services:
+```bash
    npm run setup
-   ```
-   This script will automatically generate a secure secret key and populate the `JWT_SECRET` environment variable in both `.env` files of the user-backend and admin-backend services.
+```
 
-3. **Verify the .env Files**:
-   After running the setup script, check both `.env` files to ensure that the `JWT_SECRET` is now populated with a generated value.
+### This script will automatically generate a secure secret key and populate the JWT_SECRET environment variable in both .env files of the user-backend and admin-backend services.
 
-   Example:
-   ```env
-   JWT_SECRET=your-generated-secret-key
-   ```
+## Verify the .env Files: After running the setup script, check both .env files to ensure that the JWT_SECRET is now populated with a generated value.
 
-4. **Proceed with running the services**:
-   After setting up the secret, you can start both the user-backend and admin-backend services with the proper JWT secret in place to authenticate and authorize users.
+## Example:
 
-## Usage
-After completing the setup, the `JWT_SECRET` will be automatically inserted into both `.env` files of the user-backend and admin-backend services. You can now proceed to run the services and test the functionality.
-
-## API Endpoints
-Details about the available API endpoints can be found in the API documentation or in the respective route files in the codebase.
-
-## Contributing
-Contributions are welcome! Feel free to open an issue or submit a pull request.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+- env
+- Copy
+- Edit
+```bash
+JWT_SECRET=your-generated-secret-key
 ````
 
-Copy this block and paste it directly into the GitHub editor. It will display exactly as shown above without formatting.
+### Proceed with running the services: After setting up the secret, you can start both the user-backend and admin-backend services with the proper JWT secret in place to authenticate and authorize users. 
+
+## Usage
+****After completing the setup, the JWT_SECRET will be automatically inserted into both .env files of the user-backend and admin-backend services. You can now proceed to run the services and test the functionality. ****
