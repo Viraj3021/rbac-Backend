@@ -66,6 +66,16 @@ To set up the project locally, follow these steps:
 JWT_SECRET=your-generated-secret-key
 ````
 
+## Image
+
+![Alt text]( https://github.com/Viraj3021/rbac-Backend/blob/master/Screenshot%201.png)
+![Alt text]( https://github.com/Viraj3021/rbac-Backend/blob/master/Screenshot%202.png)
+![Alt text]( https://github.com/Viraj3021/rbac-Backend/blob/master/Screenshot%203.png)
+
+
+
+
+
 ### Proceed with running the services: After setting up the secret, you can start both the user-backend and admin-backend services with the proper JWT secret in place to authenticate and authorize users. 
 
 ## Usage
