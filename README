@@ -1,3 +1,6 @@
+Got it! You want the text formatted as raw code so it doesn’t render as Markdown when pasted. Here's the content wrapped for raw text usage:
+
+````markdown
 # RBAC Backend
 
 This project is a Role-Based Access Control (RBAC) backend system designed to manage user roles, permissions, and secure access to API endpoints.
@@ -79,7 +82,6 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+````
 
-
-
-
+Copy this block and paste it directly into the GitHub editor. It will display exactly as shown above without formatting.
