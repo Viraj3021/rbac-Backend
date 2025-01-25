@@ -1,0 +1,12 @@
+{
+  "name": "rbac-backend",
+  "version": "1.0.0",
+  "main": "generate-secrets.js",
+  "scripts": {
+     "setup": "node generate-secrets.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

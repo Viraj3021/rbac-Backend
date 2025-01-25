@@ -1,0 +1,66 @@
+# Admin Backend
+
+This project is the Admin Backend for the Role-Based Access Control (RBAC) system. It manages administrative tasks such as user management, role assignments, and audit logging.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Endpoints](#api-endpoints)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+The Admin Backend provides administrative functionalities for the RBAC system. It allows administrators to manage users, roles, and permissions, as well as view audit logs of administrative actions.
+
+## Features
+- **Admin Authentication**: Secure login for administrators.
+- **User Management**: Create, update, and delete users.
+- **Role Management**: Assign and manage roles for users.
+- **Audit Logging**: Track administrative actions for security and compliance.
+
+## Installation
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/rbac-backend.git
+    ```
+2. Navigate to the admin-backend directory:
+    ```bash
+    cd rbac-backend/admin-backend
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Set up environment variables in `.env`:
+    ```
+    PORT=3002
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_jwt_secret
+    USER_BACKEND_URL=http://localhost:3001
+    ```
+5. Build the project:
+    ```bash
+    npm run build
+    ```
+6. Start the server:
+    ```bash
+    npm start
+    ```
+
+## Usage
+Use the following API endpoints to interact with the admin service.
+
+## API Endpoints
+- **Admin Login**: `POST /auth/login`
+- **Get All Users**: `GET /admin/users`
+- **Get User by ID**: `GET /admin/users/:id`
+- **Delete User**: `DELETE /admin/users/:id`
+- **Get Notes from User Backend**: `GET /admin/notes`
+
+## Contributing
+Fork the repository and submit a pull request for improvements or bug fixes.
+
+## License
+Licensed under the MIT License.
