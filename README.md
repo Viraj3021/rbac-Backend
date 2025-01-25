@@ -42,10 +42,8 @@ To set up the project locally, follow these steps:
 ### Ensure that the JWT_SECRET variables in the .env files for both services are empty.
 
 ## Example:
- -  env
- -  Copy
- -  Edit
- -  JWT_SECRET=
+ 
+ -  JWT_SECRET=Generated_JWT_SECRET key with follow this steps..
   
 
 ## Run the Setup Script: Run the following command to generate the JWT_SECRET for both services:
@@ -58,10 +56,19 @@ To set up the project locally, follow these steps:
 ## Verify the .env Files: After running the setup script, check both .env files to ensure that the JWT_SECRET is now populated with a generated value.
 
 ## Example:
+### Admin .env file
 
-- env
-- Copy
-- Edit
+- PORT=3002
+- MONGO_URI=
+- USER_BACKEND_URL=
+- JWT_SECRET=
+
+### User .env file
+
+- PORT=3001
+- MONGO_URI=
+- JWT_SECRET=
+
 ```bash
 JWT_SECRET=your-generated-secret-key
 ````
